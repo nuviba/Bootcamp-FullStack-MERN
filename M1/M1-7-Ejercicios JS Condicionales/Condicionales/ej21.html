@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-21</title>
+</head>
+<body>
+    <script>
+        /* 21. Crea un programa para ver si los comerciales reciben un extra. Si venden más de 500 euros, les damos un extra del 5% del total de lo que han vendido. El usuario introduce su nombre y el precio de las ventas. Muestra en pantalla su nombre, seguido de las ventas y en el caso de que las ventas superen 500 euros el 5% de las ventas como extra. */
+        let nombre=window.prompt('¿Cual es tu nombre?');
+        let ventas=parseFloat(window.prompt('¿Cuantas ventas has realizado?'));
+        let extra=ventas*0.05;
+        if (ventas>500){
+            window.alert(`Hola ${nombre}, has realizado ${ventas}€ en ventas y recibes un extra de ${extra}€. `);
+        }
+        else{
+            window.alert(`Hola ${nombre}, has realizado ${ventas}€ en ventas.`);
+        }
+    </script>
+</body>
+</html>

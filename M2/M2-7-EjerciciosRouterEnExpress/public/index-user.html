@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Hotel Sankt Moritz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id=enlaces>
+            <a href="./index.html">RESERVAS</a>
+            <a href="./index-checkOut.html">CHECK-OUT</a>
+            <a style="background-color:white;color: black;" href="./index-user.html">USUARIO</a>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h3>Regístrate para hacer una reserva</h3>
+            
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" id="apellido"placeholder="Apellido">
+            <input type="text" name="dni" id="dni"placeholder="DNI/NIE">
+            <button onclick="enviarDatosPost()">Registrar</button>
+            <p id="nombreRegistrado"></p>
+        </div>
+        <div>
+            <h3>Modifica los datos de tu usuario</h3>
+            
+            <input type="text" name="nombre" id="nombreM" placeholder="Nombre">
+            <input type="text" name="apellido" id="apellidoM"placeholder="Apellido">
+            <input type="text" name="dni" id="dniM"placeholder="DNI/NIE">
+            <button onclick="enviarDatosPut()">Modificar</button>
+            <p id="userModificado"></p>
+        </div>
+        
+    </main>
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,30 @@
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.cabecera img {
+  height: 120px;
+}
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.libro img {
+  width: 100%;
+  border-radius: 10px;
+}
+.libro {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 30%;
+  text-align: justify;
+}
+.footer {
+  border-top: 1px solid black;
+  margin-top: 20px;
+}
+.footer .libro {
+  width: 40%;
+}

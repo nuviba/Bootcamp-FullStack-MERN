@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-13</title>
+</head>
+<body>
+    <script>
+        /* 13. Escribe un programa que dada una frase sacará su carácter central. Nota:
+            a. Si la largura de la frase es par deberá sacar los dos caracteres centrales
+            correspondientes.
+            b. Si es impar deberá sacar su único carácter central. */
+    let frase =window.prompt("Escribe una frase:");
+    let frasecentral= parseInt(frase.lenght/2);
+    
+
+
+    let contcar=frase.length+1;
+    if(contcar%2){
+        let pospar=Math.floor(contcar/2);
+        window.alert(`Los carácteres centrales son: ${frase[pospar]} y ${frase[pospar+1]}`);
+        console.log(pospar);
+    }
+    else{
+        let posimp=Math.floor(contcar/2);
+        window.alert(`El carácter central es ${frase[posimp]}`);
+    }
+
+
+
+    </script>
+</body>
+</html>

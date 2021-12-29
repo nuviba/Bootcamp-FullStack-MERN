@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-25</title>
+</head>
+<body>
+    <script>
+        /* 25. Bob es un adolescente vago, en una conversación sus contestaciones son muy limitadas:
+            a. Bob responde: “¡Claro!” si le haces una pregunta
+            b. Bob responde “¡Eh!, tranquilízate.” si le gritas
+            c. Bob responde “¡Eh, tranquilízate! Yo sé lo que hago.” Si le haces una
+            pregunta gritándole.
+            d. Bob responde “Vale con que esas tenemos...” Si no le dices nada
+            e. Bob responde “Sin más.” a cualquier otra cosa
+(Consideramos una frase una pregunta si contiene un símbolo de ?, consideramos un grito una frase que contenga un !, consideramos una pregunta gritando si tiene tanto el símbolo ? como el !, y consideramos no decir nada una cadena de texto vacía)            
+ */ 
+let frase=window.prompt('¿Qué le dirías a Bob?');
+    let interrogante= frase.includes('?');
+    let signoexc=frase.includes('!');;
+    let len=frase.length;
+
+    if(len===0){
+        window.alert('Bob responde:“Vale con que esas tenemos...”');
+    }
+    else if(interrogante && !signoexc){
+        window.alert('Bob responde:“¡Claro!”');
+    }
+    else if(!interrogante && signoexc){
+        window.alert('Bob responde “¡Eh!, tranquilízate.”');
+    }
+    else if(interrogante && signoexc){
+        window.alert('Bob responde “¡Eh!, tranquilízate! Yo se lo que hago.”');
+    }
+    else{
+        window.alert('Bob responde “Sin más.”');
+    }
+
+    </script>
+</body>
+</html>

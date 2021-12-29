@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-4</title>
+</head>
+FALTA TERMINAR
+<body>
+    <script>
+        //4. Escribe un programa que pida al usuario tres números y que diga si la diferencia entre uno de ellos es exactamente 20 menos que uno de los otros. Por ejemplo, si el usuario introduce 20, 40 y 55, el programa dirá que el primer número es 20 menos que el segundo.
+        let num1 = parseInt(window.prompt('Dime un número:'));
+        let num2 = parseInt(window.prompt('Dime un segundo número:'));
+        let num3 = parseInt(window.prompt('Dime un tercer número:'));
+        
+        if (Math.abs(num1-num2)===20){
+            window.alert(`${num1} y ${num2} tienen una diferencia de 20`);
+        }
+        else if (Math.abs(num1-num3)===20){
+            window.alert(`${num1} y ${num3} tienen una diferencia de 20`);
+        }
+        else if (Math.abs(num2-num3)==20){
+            window.alert(`${num2} y ${num3} tienen una diferencia de 20`);
+
+        }
+        else {
+            window.alert(`Ningun numero tienen diferencias de 20`)
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-4</title>
+</head>
+<body>
+    <script>
+        //4. Escribe un programa que pida 10 valores. Al final mostrar la media de esos valores.
+        let valor=parseFloat(window.prompt('Dime un valor:'));
+        let media;
+        for(let i=1;i<10;i++){
+            valor=valor+parseFloat(window.prompt('Dime otro valor:'));
+        }
+        media=valor/10
+        window.alert(`La media es ${media}`);
+
+    </script>
+</body>
+</html>

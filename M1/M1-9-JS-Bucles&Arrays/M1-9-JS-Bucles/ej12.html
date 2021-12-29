@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-12</title>
+</head>
+<body>
+    <script>
+        //12. Escribe un programa que pida un número de 3 dígitos y muestre el resultado de sumar sus dígitos.
+
+        let num;
+        let suma=0;
+        
+        do{
+        num=window.prompt('Dime un número con tres dígitos:');
+        }while(num.length!=3)
+
+        for(let i=0;i<3;i++){
+             suma+= parseInt(num[i]);
+        }
+
+        window.alert(`La suma de los tres dígitos es ${suma}`);
+
+
+    </script>
+</body>
+</html>

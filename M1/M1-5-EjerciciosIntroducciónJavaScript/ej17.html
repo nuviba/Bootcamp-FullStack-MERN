@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-17</title>
+</head>
+<body>
+    <script>
+        //17. Escribe un programa que pida al usuario un dígito (n) y calcule y muestre el valor de n+nn+nnn. Por ejemplo si el usuario introduce 5 el programa calcularía 5 + 55 + 555
+        let n =window.prompt('Dime un dígito:');
+        let nn= n+n;
+        let nnn= n +n+n;
+        let nnum=parseInt(n);
+        let n2num=parseInt(nn);
+        let n3num=parseInt(nnn);
+        let suma= nnum+n2num+n3num;
+        window.alert(` ${nnum}+${n2num}+${n3num}= ${suma}`);
+    </script>
+</body>
+</html>

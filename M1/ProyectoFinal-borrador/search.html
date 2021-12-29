@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search-Explore Breath of the Wild</title>
+    <link rel="stylesheet" href="./final.css">
+
+</head>
+<body>
+    <header>
+        <div id=menu>
+            <menu>
+                <li><a href="./fav.html">Favorites</a></li>
+                <li><a href="./search.html">Search</a></li>
+                <li><a href="./about.html">About</a></li>
+            </menu>
+        </div>
+        <div id=title>
+            <h1><b>-SEARCH-</b></h1>
+        </div>
+        <div id=img>
+            <img src="./img/headerZelda.png" alt="zelda">
+        </div>
+    </header>
+    <main>
+        <label for="selectCategory">Select a category to perform the search: </label>
+        <select name="selectCategory" onchange="allFromCategory()" id="selectCategory">
+            <option value="selectByCat">Select by categoy</option>
+            <option value="creatures-food">Creatures (food)</option>
+            <option value="creatures-non-food">Creatures (non-food)</option>
+            <option value="equipment">Equipment</option>
+            <option value="materials">Materials</option>
+            <option value="monsters">Monsters</option>
+            <option value="treasure">Treasure</option>
+        </select>
+        
+    <div> 
+        <input id="searchNam" oninput="searchByCategory(`name`)" type="text" placeholder="Filter by name" />    </div>
+    <div>
+        <input id="searchLoc" oninput="searchByCategory(`location`)" type="text" placeholder="Filter by location" />
+    </div>
+    <div>
+        <input id="searchDes" oninput="searchByCategory(`description`)" type="text" placeholder="Filter by description" />
+    </div>
+    <div id=templateCard></div>
+    </main>
+    <footer></footer>
+    
+</body>
+<script src="./final.js"></script>
+</html>

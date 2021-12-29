@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-11</title>
+</head>
+<body>
+    <script>
+        /* 11. Escribe un programa que muestre el número entero positivo que el usuario introduzca pero al revés (si introduce 1478 que muestre 8741), si el usuario introduce cero, mostrar cero y que el programa finalice. */
+
+    let numstring;
+    let num;
+
+    do{
+        numstring=window.prompt('Dime un número entero y positvo:');
+        num=parseInt(numstring);
+        if(num<0){
+            window.prompt('Número negativo, introduce un número entero positivo')
+        }
+        else{
+            window.alert(numstring.split("").reverse().join("")); //ref: https://www.delftstack.com/es/howto/javascript/reverse-string-javascript/
+            
+
+        }
+        
+    }while(num!=0);
+
+    
+    
+
+
+        /*  do
+        (num===0){
+            window.alert('0');
+        }  */
+        
+       
+
+
+
+        
+    </script>
+</body>
+</html>

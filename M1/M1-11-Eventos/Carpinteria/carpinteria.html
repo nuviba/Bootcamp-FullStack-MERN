@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpintería Mazarredo</title>
+    <link rel="stylesheet" href="./carpinteria.css">
+</head>
+
+<body>
+    <header>
+        <img id=logo src="./iconos/Copia de logo.svg" alt="logo empresa">
+        <h1>Carpintería </h1>
+        <h1>Mazarredo</h1>
+
+    </header>
+    <main>
+        <div id="cesta">
+            <div id="mostrarProductos"></div>
+            <button onclick="cestaCompra()" style="margin:30px">Cesta</button>
+        </div>
+        <div id=productos>
+            <div>
+                <img src="./iconos/Copia de brocha.svg" alt="icono brocha">
+                <h3 class=elemento >Brocha</h3>
+                <h4>1,50€</h4>
+                <button onclick="sumaBrocha()">+</button>
+                <button onclick="restaBrocha()">-</button>
+    
+            </div>
+            <div>
+                <img src="./iconos/Copia de llave.svg" alt="icono llave">
+                <h3 class=elemento>Llave</h3>
+                <h4>2,50€</h4>
+                <button onclick="sumaLlave()">+</button>
+                <button onclick="restaLlave()">-</button>
+            </div>
+            <div>
+                <img src="./iconos/Copia de martillo.svg" alt="icono martillo">
+                <h3 class=elemento>Martillo</h3>
+                <h4>3,50€</h4>
+                <button onclick="sumaMartillo()">+</button>
+                <button onclick="restaMartillo()">-</button>
+            </div>
+            <div>
+                <img src="./iconos/Copia de tronco.svg" alt="icono tronco">
+                <h3 class=elemento>Tronco</h3>
+                <h4>0.50€</h4>
+                <button onclick="sumaTronco()">+</button>
+                <button onclick="restaTronco()">-</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Calle Martillo,31, Tuerca, 67844 - carpinteriamazarredo@gmail.com - 666 777 888 - 999 555 777</p>
+    </footer>
+    
+</body>
+<script src="./carpinteria.js"></script>
+</html>

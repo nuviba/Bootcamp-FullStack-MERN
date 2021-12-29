@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-22</title>
+</head>
+<body>
+    <script>
+/*         22. Escribe un programa para una empresa de alquiler de coches. Tendremos que preguntar al usuario la edad. Si el usuario es menor de 18, no podrá alquilar un vehículo y se lo diremos en pantalla. En caso de ser mayor de edad, le preguntamos si tiene carnet de conducir. Si la respuesta es negativa, no podrá alquilar un coche y se lo advertiremos por pantalla. Si es mayor de edad le pediremos tanto nombre como apellido , ciudad de recogida del vehículo y número de días que quiere alquilar el coche (el alquiler del coche por día tiene un coste de 25 euros y en caso que lo alquile una semana, el coste será de 150 euros). Imprimir por pantalla los datos del cliente que vaya a alquilar el coche y el coste total del alquiler
+ */
+let edad =parseInt(window.prompt('¿Qué edad tienes?'));
+let carnet;
+let nombre;
+let apellido;
+let ciudad;
+let dia;
+let costedia=25;
+let semana;
+let costesemana=150;
+let diasuelto;
+let coste;
+
+
+if (edad>=18){
+    carnet=window.prompt('¿Tienes carnet de coche?[S/N]');
+    if (carnet.toUpperCase() == "S"){
+        nombre=window.prompt('Dime tu nombre');
+        apellido=window.prompt('Dime tu primer apellido');
+        ciudad=window.prompt('¿Desde qué ciudad quieres alquilar el coche?');
+        dia=window.prompt('¿Cuantos días vas a necesitar el coche?');
+        if(dia<7){
+            coste=dia*costedia;
+            window.alert(`Hola ${nombre} ${apellido}, el coste del vehículo en ${ciudad} por ${dia} día(s() es de ${coste}€`);
+        }
+        else if(dia>=7){
+            semana=Math.floor(dia/7);
+            diasuelto=dia%7;
+            coste=(semana*costesemana)+(diasuelto*costedia);
+            window.alert(`Hola ${nombre} ${apellido}, el coste del vehículo en ${ciudad} por ${semana} semana(s) y ${diasuelto} día(s) es de ${coste}€`);
+
+        }
+    }
+    else {
+        window.alert('No puedes alquilar un coche hasta que tengas carnet de conducir');
+    }
+    }
+else{
+    window.alert('No puedes alquilar un coche hasta que tengas 18 años');
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

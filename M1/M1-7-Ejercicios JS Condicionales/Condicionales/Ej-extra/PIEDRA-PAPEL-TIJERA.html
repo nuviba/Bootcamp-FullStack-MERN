@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIEDRA-PAPEL-TIJERA</title>
+</head>
+<body>
+   <script>
+       /* 26. Haz un programa que sea el juego de piedra-papel-tijera. Pide al usuario que
+seleccione una de las 3 posibilidades y haz que el programa seleccione una de las 3
+posibilidades de manera aleatoria. Dependiendo del resultado, muestra el mensaje
+correspondiente. Mira en los siguientes enlaces cómo crear números aleatorios:
+a. https://www.w3schools.com/jsref/jsref_random.asp
+b. https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Math/random 
+    1-PIEDRA
+    2-PAPEL
+    3-TIJERAS
+*/
+let optionuser=parseInt(window.prompt(`Elige una opción:\n1-Piedra\n2-Papel\n3-Tijera`));
+let optioncomputer=Math.floor(Math.random()*(4-1)+1);;
+let usr="USUARIO";
+let com="ORDENADOR";
+let pied="PIEDRA";
+let pap="PAPEL";
+let tij="TIJERA"
+let win="GANA";
+let emp= "EMPATE";
+if(optionuser===1 && optioncomputer===2){
+    window.alert(`${usr}:${pied}\n${com}:${pap}\n${win} ${com}`);
+}
+else if(optionuser===1 && optioncomputer===3){
+    window.alert(`${usr}:${pied}\n${com}:${tij}\n${win} ${usr}`);
+}
+
+else if(optionuser===1 && optioncomputer===1){
+    window.alert(`${usr}:${pied}\n${com}:${pied}\n${emp}`);
+}
+
+else if(optionuser===2 && optioncomputer===3){
+    window.alert(`${usr}:${pap}\n${com}:${tij}\n${win} ${com}`);
+}
+else if(optionuser===2 && optioncomputer===2){
+    window.alert(`${usr}:${pap}\n${com}:${pap}\n${emp}`);
+}
+else if(optionuser===3 && optioncomputer===3){
+    window.alert(`${usr}:${tij}\n${com}:${tij}\n${emp}`);
+}
+else if(optionuser===2 && optioncomputer===1){
+    window.alert(`${usr}:${pap}\n${com}:${pied}\n${win} ${usr}`);
+}
+else if(optionuser===3 && optioncomputer===1){
+    window.alert(`${usr}:${tij}\n${com}:${pied}\n${win} ${com}`);
+}
+else if(optionuser===3 && optioncomputer===2){
+    window.alert(`${usr}:${tij}\n${com}:${pap}\n${win} ${usr}`);
+}
+else{
+    window.alert('Opción no válida');
+}
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+header {
+  background-color: #e994e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+  height: 220px;
+}
+#Título1 {
+  color: green;
+  width: 70%;
+  padding-left: 30px;
+}
+#Título1 p {
+  text-align: justify;
+}
+#Recomendaciones {
+  background-color: greenyellow;
+  color: #e994e9;
+  border-radius: 15px;
+  width: 20%;
+}
+#Recomendaciones h3 {
+  text-align: center;
+}
+#Recomendaciones ul li {
+  list-style-type: none;
+  padding-left: 10px;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-19</title>
+</head>
+<body>
+    <script>
+        //19. Escribe un programa que calcule el resto de dividir dos números sin utilizar el operador de división de resto (%)
+        let dividendo = parseInt(window.prompt("Dime el diviendo:"));
+        let divisor = parseInt(window.prompt("Dime el divisor:"));
+        let cociente= Math.floor(dividendo/divisor);
+        let resto= dividendo-(cociente*divisor);
+        window.alert(`El resto de la división es ${resto}`);
+    </script>
+</body>
+</html>

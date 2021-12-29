@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-15</title>
+</head>
+<body>
+    <script>
+        /* 15. Escribe un programa el cual analizará si la contraseña introducida es correcta o no. Para que la contraseña sea correcta deberá cumplir estas directivas:
+            ● Debe tener 8 caracteres como mínimo.
+            ● La contraseña deberá contener números. (buscar una función)
+            ● La primera letra tiene que ser en mayúsculas.(buscar una función) */
+            function tiene_numeros(texto){ //ref: https://desarrolloweb.com/articulos/funciones-validacion-alfanumerica-string-javascript.html
+                let numeros="0123456789";
+                for(i=0; i<texto.length; i++){
+                    if (numeros.indexOf(texto.charAt(i),0)!=-1){
+                        return true;
+                    }
+                }
+                return false;
+            } 
+            let psw;
+            do{
+                psw=window.prompt('Introduce la contraseña:');
+            }while(!(psw.length>=8&&tiene_numeros(psw)&& psw.charAt(0) === psw.charAt(0).toUpperCase()))
+
+            window.alert('¡Contraseña correcta!');s
+            
+
+        
+    </script>
+</body>
+</html>

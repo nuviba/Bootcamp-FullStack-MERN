@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-19</title>
+</head>
+<body>
+    <script>
+       /*  19. En una clase tienes tres exámenes, con un valor de 5 puntos máximo en cada uno. La nota final es la mejor nota de los dos primeros exámenes más la nota del tercer examen. Crea un programa que con tres notas calcula el resultado de nota final con los siguientes rangos:
+
+            a.10 es matrícula
+            b.9 y hasta 10 es sobresaliente
+            c.7 y hasta 9 es notable 6yhasta7esbien
+            d.5 y hasta 6 es suficiente
+            e. 0 hasta 5 es suspenso */
+        let ex1=parseFloat(window.prompt('¿Qué nota has sacado en el primer examen?'));
+        let ex2=parseFloat(window.prompt('¿Qué nota has sacado en el segundo examen?'));
+        let ex3=parseFloat(window.prompt('¿Qué nota has sacado en el tercer examen?'));
+        let parte1=Math.max(ex1,ex2);
+        let notafinal=parte1+ex3;
+        if(notafinal>=10){
+            window.alert('Has sacado matrícula');
+        }
+        else if (notafinal>=9){
+            window.alert('Has sacado un sobresaliente');
+        }
+        else if (notafinal>=7){
+            window.alert('Has sacado un notable');
+        }
+        else if (notafinal>=6){
+            window.alert('Has sacado un bien');
+        }
+        else if (notafinal>=5){
+            window.alert('Has sacado un suficiente');
+        }
+        else if (notafinal<5){
+            window.alert('Has suspendido');
+        }
+
+
+       
+        
+        
+        
+    </script>
+</body>
+</html>

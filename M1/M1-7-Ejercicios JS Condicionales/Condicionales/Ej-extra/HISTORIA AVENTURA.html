@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-27</title>
+</head>
+<body>
+    <script>
+       /*  27. Haz un programa que simule un libro de “Elige tu propia aventura”. Muestra un texto
+inicial y pide al usuario que seleccione una opción para continuar con la historia.
+Según la opción que elija el usuario, muestra un texto diferente para cada una de las
+opciones y ofrece otras 2 opciones al usuario. */
+        let pres=window.alert('Elige tu propia aventura');
+        let texti=window.alert('Textoinicial');
+        let op=window.prompt('Para continuar con la historia, debes de elegir entre la opción A o la opción B');
+        op=op.toUpperCase();
+        let op2a;
+        let op2b;
+        let textoa="texto a";
+        let textoa1="texto a1";
+        let textoa2="texto a2";
+        let textob="texto b";
+        let textob1="texto b1";
+        let textob2="texto b2";
+
+        if(op==="A"){
+            window.alert(textoa);
+            op2a=window.prompt('Para continuar con la aventura, elige opción A1 o opción A2:');
+            op2a=op2a.toUpperCase();
+            if(op2a=="A1"){
+                window.alert(textoa1);
+
+            }
+            else if(op2a=="A2"){
+                window.alert(textoa2);
+
+            }
+            else{
+                window.alert('La opción introducida no es la correcta.')
+            }
+
+        }
+        else if(op==="B"){
+            window.alert(textob);
+            op2b=window.prompt('Para continuar con la aventura, elige opción B1 o opción B2:');
+            op2b=op2b.toUpperCase();
+            if(op2b=="B1"){
+                window.alert(textob1);
+
+            }
+            else if(op2b=="B2"){
+                window.alert(textob2);
+
+            }
+            else{
+                window.alert('La opción introducida no es la correcta.')
+            }
+
+        }
+        else{
+            window.alert('La opción introducida no es la correcta.')
+        }
+        
+
+        
+
+
+
+        
+
+        
+
+    </script>
+</body>
+</html>

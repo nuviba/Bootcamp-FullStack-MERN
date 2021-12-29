@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-6</title>
+</head>
+<body>
+    <script>
+        //6. Escribe un programa que pida un número y muestre ese número al cuadrado y al cubo (multiplicado por sí mismo dos y tres veces). Si el número es menor que 1, no calcules el cubo ni el cuadrado.
+    
+        let num= parseInt(window.prompt('Dime un número'));
+        let numcuad= Math.pow(num, 2);
+        let numcub= Math.pow(num, 3);
+        if (num>=1){
+            window.alert(`El cuadrado de ${num} es ${numcuad} y el cubo es ${numcub} `);
+
+        }
+        else {
+            window.alert(`No podemos calcular ni el cuadrado ni el cubo de este valor`);
+        }
+
+    </script>
+</body>
+</html>

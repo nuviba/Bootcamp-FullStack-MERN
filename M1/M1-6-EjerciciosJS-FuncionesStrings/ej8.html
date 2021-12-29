@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-8</title>
+</head>
+<body>
+    <script>
+        //8. Escriba un programa que pida al usuario una suma y que te devuelva por consola los números que forman parte de la operación. Por ejemplo:23+56 → el programa devolverá 23 y 56.
+        let suma=window.prompt('Introduce una suma:');
+        //necesitamos encontrar la coordinada del símbolo + con el indexof
+        let coordenada=suma.indexOf("+");
+        let num1= parseInt(suma.substring(0,coordenada));
+        let num2= parseInt(suma.substring(coordenada+1));
+
+        console.log(num1, num2);
+
+
+    </script>
+</body>

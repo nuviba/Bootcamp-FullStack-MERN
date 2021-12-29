@@ -1,0 +1,24 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 31.4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  margin-bottom: 30px;
+  align-items: center;
+}
+#planets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card img {
+  width: 50%;
+  height: 50px;
+}
+.card h1 {
+  text-transform: capitalize;
+}
+.card li {
+  text-transform: capitalize;
+}

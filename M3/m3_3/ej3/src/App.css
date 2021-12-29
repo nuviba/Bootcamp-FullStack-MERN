@@ -1,0 +1,40 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: white;
+  align-items: center;
+}
+
+img {
+  width: 70%;
+  height: 300px;
+  border-radius: 10px;
+}
+.card h3 {
+  text-align: center;
+  color: black;
+}
+.card p {
+  text-align: justify;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.pelicula {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.pelicula img {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+}
+.pelicula p {
+  text-align: justify;
+  margin-right: 20px;
+  margin-left: 20px;
+}

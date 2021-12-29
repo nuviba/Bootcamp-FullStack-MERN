@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-14</title>
+</head>
+<body>
+    <script>
+        //14. Escribe un programa que pida una distancia (en metros), y el tiempo tardado (como tres números: horas, minutos y segundos) y que muestre la velocidad en metros por segundo y kilómetros por hora.
+        let met=parseFloat(window.prompt('Dime la distancia recorrida'));
+        let hora=parseInt(window.prompt('Dime cuantas horas has tardado'));
+        let min=parseInt(window.prompt('Dime cuantos minutos has tardado'));
+        let seg=parseInt(window.prompt('Dime cuantos segundos has tardado'));
+        let segtot= (hora*3600)+(min*60)+seg;
+        let metseg=met/segtot;
+        let hortot= hora + (min/60)+(seg/3600);
+        let kmh= (met/1000)/hortot;
+        window.alert(`La velocidad ${metseg} m/s y ${kmh} km/h`);
+    </script>
+</body>
+</html>

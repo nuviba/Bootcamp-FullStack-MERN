@@ -1,0 +1,17 @@
+#baraja {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.styleCard {
+  width: 20%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  margin: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.styleCard img:hover {
+  transform: rotate(-10deg);
+}

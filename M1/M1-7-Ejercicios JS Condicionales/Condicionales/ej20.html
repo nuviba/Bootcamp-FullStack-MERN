@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-20</title>
+</head>
+<body>
+    <script>
+        //20. Para convertir de grados centígrados a grados fahrenheit multiplicamos por 9, le dividimos 5 y a ese resultado le añadimos 32. Para convertir de fahrenheit a centígrados le restamos 32, multiplicamos por 5 y dividimos entre 9. Pide un valor y pregunta al usuario si quiere convertirlo a centígrados (si escribe C) o si quiere convertirlo a fahrenheit (si escribe F) y muestra el valor en pantalla.
+        let grados=parseFloat(window.prompt('¿Cuantos grados hace?'));
+        let conv= window.prompt('Si quieres convertirlo a Centígrados escribe C, si quieres en Farenheit, escribe F');
+       
+        let far=(grados*9/5)+32;
+        let cent=((grados-32)*5)/9;
+        switch (conv.toUpperCase()){
+            case `C`:
+                window.alert(`${grados}F son ${cent}º`);
+            break;
+            case `F`:
+                window.alert(`${grados}º son ${far}F`);
+            break;
+        default:
+                window.alert(`Opción no válida`);
+        }
+    </script>
+    
+</body>
+</html>

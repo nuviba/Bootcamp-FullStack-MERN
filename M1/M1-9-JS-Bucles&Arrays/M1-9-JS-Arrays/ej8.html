@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-8</title>
+</head>
+<body>
+    <script>
+       /*  8. Crea un programa que a partir de un array que contiene las edades de 20 alumnos
+(generadas aleatoriamente entre 18 y 35), calcule y nos devuelva la media de edad
+de dicha clase. */
+        let array=[];
+        let suma=0;
+        for(let i=0;i<=19;i++){
+            array[i]= Math.floor(Math.random() * (35 - 18) + 18);
+        }
+        for(let i=0;i<=19;i++){
+            suma=suma+array[i];
+        }
+        window.alert(`La media de la edad de los alumnos es ${suma/20}`)
+
+
+    </script>
+</body>
+</html>

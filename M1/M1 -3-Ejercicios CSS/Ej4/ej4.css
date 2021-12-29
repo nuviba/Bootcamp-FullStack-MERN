@@ -1,0 +1,9 @@
+header ul li {
+  color: violet;
+}
+main ul li {
+  color: rgb(130, 238, 144);
+}
+footer ul li {
+  color: rgb(30, 81, 192);
+}

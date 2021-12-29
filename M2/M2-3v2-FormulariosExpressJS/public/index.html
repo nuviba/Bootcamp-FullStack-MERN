@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopción de animales</title>
+</head>
+<body>
+    <div id=tabla>
+    </div>
+
+    
+    <script>
+        fetch("http://localhost:3001/animales")
+        .then((res) => res.json())
+        .then((data)=>
+        {
+            listaAnimales=data;
+            let tabla=`<table border="2">
+            <tr>
+            <th colspan="4">ANIMALES</th>
+            </tr>
+            <tr>
+            <th>NOMBRE</th>
+            <th>EDAD</th>
+            <th>TIPO</th>
+            <th>ADOPTAR</th>
+            </tr>`
+            for(let i=0;i<listaAnimales.length;i++){
+                tabla+=`<tr>
+                <th>${listaAnimales[i].nombre}</th>
+                <th>${listaAnimales[i].edad}</th>
+                <th>${listaAnimales[i].tipo}</th>
+                <th>
+                <form action="/adoptar/">
+                <button name=nombre value=${listaAnimales[i].nombre} type="submit">Adoptame</button> </form>
+                </th>
+                </tr>`
+            };
+
+            tabla+=`</table>`
+            document.getElementById("tabla").innerHTML=tabla;
+            })
+
+        
+    </script> 
+    
+</body>
+</html>

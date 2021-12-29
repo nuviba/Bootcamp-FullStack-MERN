@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-15</title>
+</head>
+<body>
+    <script>
+
+/* 15. Decir el número de helados que queremos comprar. Cada helado vale 2 euros. Si compramos más de 10 helados, nos regalan uno. Mostrar en pantalla el número de helados que nos dan y cuánto hemos pagado por ellos. (Sólo damos un helado gratuito aunque compren muchos más helados que 10) */
+let numhelado=parseInt(window.prompt('¿Cuanots helados vas a comprar?'));
+let preciohelado=2;
+if (numhelado>=10)
+{window.alert(`Has comprado ${numhelado} helados y te llevas uno gratis por ${numhelado*preciohelado}€`);
+}
+else if (numhelado>1){
+window.alert(`Has comprado ${numhelado} helados por ${numhelado*preciohelado}€`);
+}
+else if (numhelado===1){
+window.alert(`Has comprado ${numhelado} helado por ${numhelado*preciohelado}€`);
+}
+else{
+    window.alert('No has comprado ningún helado.');
+}
+    </script>
+</body>
+</html>

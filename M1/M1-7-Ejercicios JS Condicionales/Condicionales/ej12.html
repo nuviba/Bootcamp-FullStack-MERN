@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-12</title>
+</head>
+<body>
+    <script>
+
+/* 12. Resultado de carrera. Hacer varios programas en los que se le pregunta al usuario el puesto en el que acabó. Después:
+            a. Si el valor de puesto es 1 mostramos mensaje con "Ganaste", si no "Lo importante es participar”.
+            b. Si el valor de puesto es 1, mostramos mensaje con "Medalla de oro", si el valor de puesto es 2, mostramos el mensaje con "Medalla de plata", si es 3 "Medalla de bronce" y al resto "Lo importante es participar.
+            c. Con switch: Si el valor de puesto es 1, mostramos mensaje con "Medalla de oro", si el valor de puesto es 2, mostramos el mensaje con "Medalla de plata", si es 3 "Medalla de bronce" y al resto "Lo importante es participar.
+            d. Los puestos 1, 2 y 3 ven el mensaje "Sube al podium", el resto ven el mensaje "Se acabó la carrera". Hazlo usando un if/else.
+ */
+let pa=parseInt(window.prompt('En qué puesto  has quedado?'));
+        if (pa===1) {
+            window.alert('Ganaste');
+        }
+        else{
+            window.alert('Lo importante es participar');
+        }
+let pb= parseInt(window.prompt('¿En qué puesto  has quedado?'));
+        if(pb===1){
+            window.alert('Medalla de oro');
+        }
+        else if (pb===2){
+            window.alert('Medalla de plata');
+        }
+        else if(pb===3){
+            window.alert('Medalla de bronce');
+        }
+        else{
+            window.alert('Lo importante es participar');
+        }
+
+let pc= parseInt(window.prompt('¿En qué puesto  has quedado?'));
+        
+        switch(pc){
+            case 1:
+                window.alert('Medalla de oro');
+            break;
+            case 2:
+                window.alert('Medalla de plata');
+            break;
+            case 3:
+                window.alert('Medalla de bronce');
+            break;
+            default:
+                window.alert('Lo importante es participar');
+            
+        }
+let pd= parseInt(window.prompt('¿En qué puesto  has quedado?'));
+if(pd===1||pd===2||pd===3){
+    window.alert('Sube al pódium');
+}
+else{
+    window.alert('Se acabó la carrera');
+}
+ </script>
+</body>
+</html>

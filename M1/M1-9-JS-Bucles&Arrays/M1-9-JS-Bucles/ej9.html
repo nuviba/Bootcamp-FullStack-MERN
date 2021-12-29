@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-9</title>
+</head>
+<body>
+    <script>
+        /* 9. Escribe un programa que muestre los números de 1 a 12 en una columna. En la columna de al lado de los números impares mostrar el cuadrado de ese valor y en la de los pares mostrar el cubo. */
+        let out='';
+        let num;
+        for(let i=1;i<=12;i++){
+            if(i%2==0){
+                num=i*i*i;
+            }
+            else{
+                num=i*i;
+            }
+            out+=i+`---${num}\n`;
+        }
+        window.alert(out);
+
+        
+    </script>
+</body>
+</html>

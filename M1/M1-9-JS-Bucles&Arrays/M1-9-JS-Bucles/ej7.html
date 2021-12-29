@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-7</title>
+</head>
+<body>
+    <script>
+        /* 7. Escribe un programa que pida valores. Si introduce un valor negativo, mostrar un mensaje diciendo que se ignoran los valores negativos.Seguir pidiendo hasta que el usuario introduzca un 0, entonces mostrar la suma de los valores introducidos. */
+        let valor;
+        let suma=0;
+        do{
+            
+            valor=parseInt(window.prompt('Dime un valor:'));
+                if(valor<0){
+                    window.alert('Se ignoran los valores negativos');
+                }
+                else{
+                    suma+=valor;
+                }
+                    
+        }while(valor!=0);
+        window.alert(`La suma de los valores es ${suma}`);
+        
+    </script>
+</body>
+</html>

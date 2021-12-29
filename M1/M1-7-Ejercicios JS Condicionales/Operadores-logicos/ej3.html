@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-3</title>
+</head>
+<body>
+    <script>
+       /*  3. A partir de un valor de número entero, mostrar el valor absoluto. Por ejemplo si se introduce un -7 mostrar el mensaje "El valor absoluto de -7 es 7". Si es positivo o cero mostrar ese mismo valor. */
+       let num=parseFloat(window.prompt('Dime un número positivo o negativo;'));
+       let numabs=Math.abs(num);
+       if(num<0){
+           window.alert(`El valor absoluto de ${num} es ${numabs}.`);
+       }
+       else{
+        window.alert(`El valor es ${num}.`);
+       }
+    </script>
+</body>
+</html>

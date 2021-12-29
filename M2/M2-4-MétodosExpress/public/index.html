@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Personas</title>
+</head>
+<body>
+    <div id='lista'></div>
+
+    <h1>INTRODUCE LOS DATOS DE UNA NUEVA PERSONA:</h1>
+    <input type="text" id="nombre1" placeholder="Introduce el nombre"/>
+    <input type="text" id="apellido1" placeholder="Introduce el apellido"/>
+    <input type="text" id="edad1" placeholder="Introduce la edad" />
+    <button onclick="enviarDatosPost()">Enviar</button>
+
+    <h1>INTRODUCE LOS DATOS PARA MODIFICAR UNA PERSONA:</h1>
+    <input type="text" id="nombre2" placeholder="Introduce el nombre"/>
+    <input type="text" id="apellido2" placeholder="Introduce el apellido"/>
+    <input type="text" id="edad2" placeholder="Introduce la edad" />
+    <button onclick="enviarDatosPut()">Enviar</button>
+
+    <h1>INTRODUCE LOS DATOS PARA ELIMINAR A UNA PERSONA:</h1>
+    <input type="text" id="nombre3" placeholder="Introduce el nombre"/>
+    <input type="text" id="apellido3" placeholder="Introduce el apellido"/>
+    <input type="text" id="edad3" placeholder="Introduce la edad" />
+    <button onclick="enviarDatosDel()">Enviar</button>
+
+    <script src="./index.js"></script>
+</body>
+</html>

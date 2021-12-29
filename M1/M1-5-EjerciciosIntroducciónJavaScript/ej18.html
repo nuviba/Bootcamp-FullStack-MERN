@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-18</title>
+</head>
+<body>
+    <script>
+        //18. Escribe un programa que convierta los segundos a horas, minutos y segundos. Por ejemplo si introduce 4000 segundos que muestre el mensaje: 1 horas, 6 minutos, 40 segundos.
+        let segundos= parseInt(window.prompt`Cuantos seguindos son?`);
+        let horas= Math.floor(segundos/3600);
+        let restohoras= segundos%3600;
+        let min= Math.floor(restohoras/60);
+        let segundosresto=restohoras%60;
+        window.alert(`Son ${horas}horas, ${min}minutos, ${segundosresto} segundos`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio-tablero</title>
+</head>
+<body>
+    <script>
+        let lado=parseInt(prompt("¿Cuantas filas/columnas quieres en el tablero?")); //pedimos al usuario que nos diga el número de filas/columnas que quiere para el tablero
+        let resultado =""; //definimos la variable resultado y le asignamos una string vacía para que vaya guardando el resultado del bucle
+        let casilla; //definimos variable casilla para dar forma a cada casilla del tablero
+        for(let fila=1; fila <= lado; fila=fila+1)//creamos un bucle for para que se repita tantas veces como el número de filas que ha introducido el usuario y cree las filas
+        {
+            resultado=""; //volvemos a reasignar la variable, para que en cada iteración su asignación se "resetee"
+            for (let columna=1 ;columna <= lado; columna=columna+1) //creamos un nuevo bucle para que el programa haga tantas columnas como el numero de columnas que ha solicitado el usuario
+            {   // con los condicionales podremos dar forma al tablero
+                if(fila % 2 != 0) // siempre que el numero de fila no sea par, si la columna es par, la casilla será O y si no la casilla será X
+                {
+                    if (columna % 2 == 0)
+                    {
+                        casilla="O";
+                    }
+                    else
+                    {
+                        casilla="X";
+                    }
+                }
+                if(fila % 2 == 0) // siempre que el numero de fila  sea par, si la columna es par, la casilla será X y si no la casilla será 0
+                {
+                    if (columna % 2 == 0)
+                    {
+                        casilla="X";
+                    }
+                    else
+                    {
+                        casilla="O";
+                    }
+                }
+              resultado = resultado + casilla;
+            }
+            console.log(resultado);    //mostrará el resultado de cada fila por pantalla
+        }
+    </script>
+</body>
+</html>

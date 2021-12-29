@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-15</title>
+</head>
+<body>
+    <script>
+        //15. Escribe un programa que pida dos variables, y después intercambie sus valores (si por ejemplo ponemos 8 en la variable a y 5 en la variable b, que al final del programa la variable a tenga el valor 5 y la variable b el valor 8).
+        let va=window.prompt('Dime la variable a');
+        let vb=window.prompt('Dime la variable b');
+        let vc=va;
+        va=vb;
+        vb=vc;
+        window.alert(`Tras el cambio el valor de la variable a es ${va} y el valor de la variable b es ${vb}`);
+    </script>
+</body>
+</html>

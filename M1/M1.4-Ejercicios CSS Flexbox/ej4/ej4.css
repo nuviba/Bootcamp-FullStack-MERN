@@ -1,0 +1,24 @@
+main {
+  background-color: indianred;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  text-align: center;
+}
+#Título1 {
+  width: 25%;
+  height: 80%;
+  padding-left: 35px;
+}
+h1 {
+  text-transform: uppercase;
+}
+#Título2 {
+  width: 25%;
+  height: 80%;
+}
+#Título3 {
+  width: 25%;
+  height: 80%;
+  padding-right: 35px;
+}

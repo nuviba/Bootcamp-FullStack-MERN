@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table shop</title>
+</head>
+<body>
+<div id='lista'></div>
+
+<h1>TABLE SHOP</h1>
+
+<h1>Añadir una mesa</h1>
+
+<input type="text" id="tamaño" placeholder="Introduce el tamaño en cm"/>
+<input type="text" id="color" placeholder="Introduce el color"/>
+<input type="text" id="material" placeholder="Introduce el material" />
+<input type="text" id="patas" placeholder="Introduce el número de patas" />
+<button onclick="enviarDatosPost()">Alta</button>
+
+<h1>Mostrar mesas disponibles</h1>
+
+<button onclick="mostrarDatos()">Mostrar</button>
+
+<h1>Modificar color mesa</h1>
+<input type="text" id="colorPut" placeholder="Introduce el color"/>
+
+<button onclick="enviarDatosPut()">Modificar</button>
+
+<h1>Eliminar mesa por el número de patas</h1>
+
+<input type="text" id="patasDel" placeholder="Introduce el número de patas" />
+<button onclick="enviarDatosDel()">Eliminar</button>
+
+
+<script src="./index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-24</title>
+</head>
+<body>
+    <script>
+      /*   24. Escribe un programa que dice si los dígitos de un número de tres cifras son todos impares, todos pares o son mezclados. Tu programa debe pedir un número al usuario, y mostrar el número, seguido del mensaje "Todas las cifras son pares", "Todas las cifras son impares" o "El número tiene cifras pares e impares". */
+      let num=parseInt(window.prompt('Dime un número de tres cifras'));
+        let cat1= parseInt(num[0]);
+        let cat2= parseInt(num[1]);
+        let cat3= parseInt(num[2]);
+        if(cat1%2===0 && cat2%2===0 && cat3===0){
+            window.alert('Todos los números son pares');
+        }
+        else if(cat1%2!==0 && cat2%2!==0 && cat3!==0){
+            window.alert('Todos los números son impares');
+        }
+        else {
+            window.alert('El número tiene cifras pares e impares');
+        }
+    </script>
+</body>
+</html>

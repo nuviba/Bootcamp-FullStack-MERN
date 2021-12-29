@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejecicio-5-ifelse</title>
+</head>
+<body>
+    <script>
+
+        //5. Pide al usuario que escriba un día de la semana (lunes, martes...). Mostrar en pantalla el día que dice que es si es entre lunes y viernes (Por ejemplo "Hoy es lunes") y si es fin de semana mostrar "Es fin de semana". Hazlo una vez usando switch y otra con if else.
+        let dia=window.prompt("Dime un día de la semnana:").toLowerCase();
+
+        if(dia==="lunes"||dia==="martes"||dia==="miércoles"||dia==="miércoles"||dia==="jueves"||dia==="viernes"){
+            window.alert(`Hoy es ${dia}`);
+        }
+        else if (dia=="sábado"||dia==="sabado"||dia==="domingo"){
+            window.alert(`Hoy es fin de semana`);
+        }
+        else{
+            window.alert(`No es un dia de la semana`);
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+header {
+  background-color: indianred;
+  text-align: center;
+}
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 20px;
+}
+.caja {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.caja h1 {
+  background-color: white;
+  border-radius: 5px;
+  width: 20%;
+  text-align: center;
+}
+header .caja {
+  color: indianred;
+}
+main .caja {
+  color: green;
+}
+#Título1 {
+  width: 25%;
+  height: 80%;
+  padding-left: 35px;
+}
+header h1 {
+  text-transform: uppercase;
+}
+#Título2 {
+  width: 25%;
+  height: 80%;
+}
+#Título3 {
+  width: 25%;
+  height: 80%;
+  padding-right: 35px;
+}
+main {
+  background-color: green;
+}
+#Título4 {
+  width: 20%;
+  height: 80%;
+  padding-left: 35px;
+}
+#Título5 {
+  width: 20%;
+  height: 80%;
+}
+#Título6 {
+  width: 20%;
+  height: 80%;
+}
+#Título7 {
+  width: 20%;
+  height: 80%;
+  padding-right: 35px;
+}

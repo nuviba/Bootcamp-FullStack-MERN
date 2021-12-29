@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-6</title>
+</head>
+<body>
+    <script>
+        //6. Escribe un programa que dada una palabra en minúsculas, muestre en la consola la mitad de la palabra en minúsculas y la otra mitad en mayúsculas.
+        let palabramin=window.prompt('Dime una palabra escrita en minúscula');
+        let cuentacar= palabramin.length;
+        let palabra1= palabramin.substring(0,cuentacar/2);
+        let mayus=palabra1.toUpperCase();
+        let palabra2= palabramin.substring((0,cuentacar/2));
+        let minus=palabra2.toLowerCase()
+        window.alert(`${mayus}${minus}`);
+    </script>
+</body>
+</html>

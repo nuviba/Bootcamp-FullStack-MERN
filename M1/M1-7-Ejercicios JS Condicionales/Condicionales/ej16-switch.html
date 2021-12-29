@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-16</title>
+</head>
+<body>
+    <script>
+        /* 16. Con if else if: Mostrar en pantalla un menú con varias opciones. Dependiendo de lo que el usuario elija, mostrar en pantalla la selección. Hacerlo tanto con if else como con switch. */
+        let opciones=parseInt(window.prompt(`Selecciona la opción:\n1-Escritorio\n2-Descargas\n3-Aplicaciones`));
+        switch(opciones){
+            case 1:
+            window.alert('Has seleccionado Escritorio');
+            break;
+            case 2:
+            window.alert('Has seleccionado Descargas');
+            break;
+            case 3:
+            window.alert('Has seleccionado Aplicaciones');
+            break;
+            default:
+            window.alert('No has seleccionado ninguna opción');
+        }
+        
+    </script>
+</body>
+</html>

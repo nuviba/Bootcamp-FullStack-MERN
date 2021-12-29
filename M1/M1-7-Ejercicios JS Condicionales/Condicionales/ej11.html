@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-11</title>
+</head>
+<body>
+    <script>
+
+/* 11. Escribe un programa que pida dos números enteros entre 25 y 75 y que diga si hay un dígito en común entre los dos números.
+ */
+let num1=window.prompt('Dime un número entre el 25 y el 75');
+let num2=window.prompt('Dime otro número entre el 25 y el 75');
+let num11=num1.substring(0,1);
+let num12=num1.substring(1);
+let num21=num2.substring(0,1);
+let num22=num2.substring(1);
+
+if(num11===num21 || num11===num22|| num12===num21||num12===num11){
+    window.alert("Hay dos carácteres iguales")
+}
+else{
+    window.alert("No hay dos carácteres iguales")
+}
+    </script>
+    
+</body>
+</html>

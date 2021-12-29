@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-8</title>
+</head>
+<body>
+    <script>
+        /* 8. Escribe un programa que muestre todos los valores pares o impares entre 1 y 100 dependiendo de si el usuario introduce P o I . Si introduce otra cosa, decir que ese valor no es correcto y pedirle otra vez. */
+       
+        let poi;
+        let txt="";
+        
+        do{
+            poi=window.prompt('Dime P si quieres que muestre los valores pares del 1 al 100 o I si quieres que muestre los impares:');
+            poi=poi.toUpperCase();
+                if(poi!="P"&&poi!="I"){
+                    window.alert('El valor introducido no es correcto');
+                }
+
+        }while(poi!="P"&&poi!="I");
+
+        switch(poi){
+            case "P":
+                for(let i=2;i<=100;i=i+2){
+                    txt+=`${i}-`;
+                }
+                window.alert(txt);
+            break;
+            case "I":
+                for(let i=1;i<=100;i=i+2){
+                    txt+=`${i}-`;
+                }
+                window.alert(txt);
+            break;
+            
+        }
+    </script>
+
+</body>
+</html>

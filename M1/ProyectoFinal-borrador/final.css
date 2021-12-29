@@ -1,0 +1,73 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  border: solid #ba9b63;
+  border-radius: 10px;
+}
+#img img {
+  height: 150px;
+  margin-right: 0;
+}
+#title {
+  color: #ba9b63;
+  font-size: larger;
+  font-family: fantasy;
+}
+#menu {
+  padding-left: 15px;
+  background-color: #ba9b63;
+  background-position: right;
+  border-radius: 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-family: fantasy;
+}
+#menu menu {
+  list-style: none;
+  margin: 0;
+}
+#menu menu li {
+  display: inline-block;
+}
+#menu menu li a {
+  color: white;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+#menu menu li a:hover {
+  background-color: white;
+  color: #ba9b63;
+}
+
+main {
+  background-image: url("./img/breathOfTheWild.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: max-content;
+  min-height: 800px;
+  border: solid white;
+  border-radius: 10px;
+}
+#templateCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  justify-content: space-between;
+}
+.card h1 {
+  text-transform: capitalize;
+}

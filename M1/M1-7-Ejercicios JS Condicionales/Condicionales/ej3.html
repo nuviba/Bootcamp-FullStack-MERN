@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-3</title>
+</head>
+<body>
+    <script>
+
+        //3. Escribe un programa que pida al usuario 3 números. Si el resultado de la suma de los dos primeros es igual al tercer número, mostrarlo en pantalla, si no mostrar que el tercero no es la suma de los dos anteriores.
+        let num1 = parseInt(window.prompt('Dime un número:'));
+        let num2 = parseInt(window.prompt('Dime un segundo número:'));
+        let num3 = parseInt(window.prompt('Dime un tercer número:'));
+        let suma= num1+num2;
+        if (suma==num3){
+            window.alert(`La suma de ${num1} y ${num2} es igual a ${num3}`)
+        }
+        else {
+            window.alert(`La suma de ${num1} y ${num2} no es igual a ${num3}`)
+        }
+
+    </script>
+</body>
+</html>

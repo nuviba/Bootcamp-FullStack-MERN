@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-20</title>
+</head>
+<body>
+    <script>
+        //20. Escribe un programa que pida un número de minutos y muestre cuantos años y días son.
+        let minutos= parseInt(window.prompt`Cuantos minutos son?`);
+        let dias= Math.floor(minutos/1440);
+        let any= Math.floor(dias/365);
+        let diassueltos=dias%365;
+        window.alert(`Son ${año} años y ${diassueltos}días`);
+    </script>
+</body>
+</html>
